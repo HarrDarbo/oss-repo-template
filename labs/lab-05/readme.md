@@ -1,3 +1,4 @@
+Lab 5 - Harrison Darbin - RIN: 661718264\
 Steps 1 & 2\
 Output with 10 & 4294967296:\
 ![step11](https://github.com/HarrDarbo/oss-repo-template/blob/master/labs/lab-05/oss51.png)\
