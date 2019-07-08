@@ -1,6 +1,10 @@
-Steps 1 & 2
+Steps 1 & 2\
+Output with 10 & 4294967296:\
+![step11](https://github.com/HarrDarbo/oss-repo-template/blob/master/labs/lab-05/oss51.png)\
+Output without input:\
+![step12](https://github.com/HarrDarbo/oss-repo-template/blob/master/labs/lab-05/oss52.png)\
 Tutorial.cxx
-----------------------------------------------------------------------------------
+~~~
 // A simple program that computes the square root of a number
 #include <cmath>
 #include <iostream>
@@ -30,10 +34,10 @@ int main(int argc, char* argv[])
             << std::endl;
   return 0;
 }
-----------------------------------------------------------------------------------
+~~~
 
 CMakeLists.txt
-----------------------------------------------------------------------------------
+~~~
 cmake_minimum_required(VERSION 3.3)
 project(Tutorial)
 
@@ -79,11 +83,18 @@ target_include_directories(Tutorial PUBLIC
 #add_test (TutorialRuns Tutorial 25)
 #set_tests_properties (TutorialComp25 PROPERTIES PASS_REGULAR_EXPRESSION "25 is 5")
 #add_test (TutorialRuns Tutorial 0.0001)
-----------------------------------------------------------------------------------
+~~~
 
-Step 3 & 4 (Progress from 3 carried over into 4)
+Step 3 & 4 (Progress from 3 carried over into 4)\
+Output with 10 & 4294967296:\
+![step31](https://github.com/HarrDarbo/oss-repo-template/blob/master/labs/lab-05/oss53.png)\
+Output without input:\
+![step32](https://github.com/HarrDarbo/oss-repo-template/blob/master/labs/lab-05/oss54.png)\
+Output from ctest -W:\
+![step33](https://github.com/HarrDarbo/oss-repo-template/blob/master/labs/lab-05/oss55.png)\
+
 CMakeLists.txt
-----------------------------------------------------------------------------------
+~~~
 cmake_minimum_required(VERSION 3.3)
 project(Tutorial)
 
@@ -159,10 +170,10 @@ do_test(Tutorial 7 "7 is 2.645")
 do_test(Tutorial 25 "25 is 5")
 do_test(Tutorial -25 "-25 is [-nan|nan|0]")
 do_test(Tutorial 0.0001 "0.0001 is 0.01")
-----------------------------------------------------------------------------------
+~~~
 
 MathFunctions/CMakeLists.txt
-----------------------------------------------------------------------------------
+~~~
 add_library(MathFunctions mysqrt.cxx)
 
 # state that anybody linking to us needs to include the current source dir
@@ -173,12 +184,15 @@ target_include_directories(MathFunctions
 
 install(TARGETS MathFunctions DESTINATION lib)
 install(FILES MathFunctions.h DESTINATION include)
-----------------------------------------------------------------------------------
+~~~
 
-Step 5
-
+Step 5\
+Output with 10 & 4294967296:\
+![step51](https://github.com/HarrDarbo/oss-repo-template/blob/master/labs/lab-05/oss56.png)\
+Output without input:\
+![step52](https://github.com/HarrDarbo/oss-repo-template/blob/master/labs/lab-05/oss57.png)\
 CMakeLists.txt
-----------------------------------------------------------------------------------
+~~~
 cmake_minimum_required(VERSION 3.3)
 project(Tutorial)
 
@@ -254,10 +268,10 @@ do_test(Tutorial 7 "7 is 2.645")
 do_test(Tutorial 25 "25 is 5")
 do_test(Tutorial -25 "-25 is [-nan|nan|0]")
 do_test(Tutorial 0.0001 "0.0001 is 0.01")
-----------------------------------------------------------------------------------
+~~~
 
 MathFunctions/CMakeLists.txt
-----------------------------------------------------------------------------------
+~~~
 # first we add the executable that generates the table
 add_executable(MakeTable MakeTable.cxx)
 
@@ -283,4 +297,4 @@ ${CMAKE_CURRENT_BINARY_DIR}
 
 install(TARGETS MathFunctions DESTINATION lib)
 install(FILES MathFunctions.h DESTINATION include)
-----------------------------------------------------------------------------------
+~~~
