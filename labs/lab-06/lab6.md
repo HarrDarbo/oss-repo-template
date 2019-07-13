@@ -2,8 +2,11 @@
 ## Example00:
 ![](https://github.com/HarrDarbo/oss-repo-template/blob/master/labs/lab-06/oss61.png)\
 
+## Example01:
+![](https://github.com/HarrDarbo/oss-repo-template/blob/master/labs/lab-06/oss62.-1.png)\
+![](https://github.com/HarrDarbo/oss-repo-template/blob/master/labs/lab-06/oss62.png)
+
 ## Example02:
-![](https://github.com/HarrDarbo/oss-repo-template/blob/master/labs/lab-06/oss62.png)\
 ![](https://github.com/HarrDarbo/oss-repo-template/blob/master/labs/lab-06/oss63.png)
 
 ## Example03:
