@@ -1,5 +1,7 @@
+Harrison Darbin - Lab 7 - 7/26/19
 PART 1:
 OUTPUT:
+~~~
 Loaded words_dat.txt containing 5757 five-letter English words.
 Two words are connected if they differ in one letter.
 Graph has 5757 nodes with 14135 edges
@@ -66,8 +68,10 @@ peace
 peach
 Shortest path between pound and marks is
 None
+~~~
 
 CODE:
+~~~
 ...
 for (source, target) in [('chaos', 'order'),
                              ('nodes', 'graph'),
@@ -75,11 +79,48 @@ for (source, target) in [('chaos', 'order'),
                              ('flies', 'swims'),
                              ('mango', 'peach'),
                              ('pound', 'marks')]:
-...
+...`
+~~~
 
 PART 2:
 OUTPUT:
-
+~~~
+Loaded words_dat.txt containing 5757 five-letter English words.
+Two words are connected if they differ in one letter.
+Graph has 4273 nodes with 21047 edges
+81 connected components
+Shortest path between cold and warm is
+cold
+wold
+word
+ward
+warm
+Shortest path between love and hate is
+love
+hove
+have
+hate
+Shortest path between good and evil is
+good
+goad
+glad
+glid
+elid
+elit
+exit
+exil
+evil
+Shortest path between pear and beef is
+pear
+bear
+beer
+beef
+Shortest path between make and take is
+make
+take
+~~~
+CODE:
+~~~
 # Authors: Aric Hagberg (hagberg@lanl.gov),
 #          Brendt Wohlberg,
 #          hughdbrown@yahoo.com
@@ -152,6 +193,6 @@ if __name__ == '__main__':
                 print(n)
         except nx.NetworkXNoPath:
             print("None")
-
-PART 3: [Whoops never got this working]
+~~~
+PART 3: [Whoops never got this working] (Am currently out of time realizing this ¯\\_(ツ)_/¯)
 
